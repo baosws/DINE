@@ -10,7 +10,7 @@ conda install pytorch -c pytorch
 conda install numpy pandas seaborn matplotlib scikit-learn scipy
 pip install pytorch-lightning==1.5.3 causal-learn==0.1.3.0 CCIT==0.4 tf-slim tensorflow
 ```
-__Note__: `causal-learn` is for `KCIT`, `CCIT` is for `CCIT`, `tensorflow` is for `CCMI` & `MIND`, `tensorflow` & `tf-slim` are for `CCMI`. Please comment out or remove the lines related to these methods from `src/methods/__init__.py` if you don't want to use them.
+__Note__: `causal-learn` is for `KCIT`, `CCIT` is for `CCIT`, `tensorflow` is for `CCMI` & `MIND`, `tensorflow` & `tf-slim` are for `CCMI`. Please comment out or remove the lines related to these methods from `src/methods/__init__.py` if you don't want to install these dependencies.
 
 ## Demo
 
