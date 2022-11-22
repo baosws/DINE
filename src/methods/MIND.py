@@ -1,3 +1,9 @@
+"""
+TensorFlow Implementation of MIND ([1]) under Spearman rank correlation constraints.
+[1] Kom Samo, Y. (2021). Inductive Mutual Information Estimation: A Convex Maximum-Entropy Copula Approach. Proceedings of The 24th International Conference on Artificial Intelligence and Statistics. Available from https://proceedings.mlr.press/v130/kom-samo21a.html.
+https://github.com/kxytechnologies/kxy-python
+"""
+
 import numpy as np
 import logging
 
