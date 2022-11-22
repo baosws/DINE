@@ -5,7 +5,7 @@ data:
   T: 200
 
 methods:
-  LCIT:
+  DINE_CIT:
     hidden_sizes: 4
     n_components: 16
     n_bootstraps: 100
