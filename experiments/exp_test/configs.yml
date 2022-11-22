@@ -1,0 +1,19 @@
+testcases:
+  test1:
+    N: 1000
+    d: 1
+    dz: 2
+    indep: True
+    rho: -0.99
+    random_state: 47
+
+methods:
+  LMI:
+    n_components: 4
+    hidden_sizes: 16
+    verbose: False
+  MINE:
+    hidden: 128
+    layers: 1
+  KSG:
+    k: 3

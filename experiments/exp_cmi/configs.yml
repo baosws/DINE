@@ -1,0 +1,12 @@
+data:
+  T: 50
+  N: [200, 1000]
+  d: [2, 20]
+  rho: [-0.99, -0.75, -0.5, 0, 0.5, 0.75, 0.99]
+
+methods:
+  LMI:
+    hidden_sizes: 4
+    n_components: 16
+  KSG:
+    k: 3

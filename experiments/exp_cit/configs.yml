@@ -1,0 +1,11 @@
+data:
+  alpha: 0.05
+  N: 1000
+  d: [5, 8, 11, 14, 17, 20]
+  T: 200
+
+methods:
+  LCIT:
+    hidden_sizes: 4
+    n_components: 16
+    n_bootstraps: 100
