@@ -16,7 +16,7 @@ logging.basicConfig()
 logger = logging.getLogger(__name__)
 
 EPS = 1e-6
-class CCNF(LightningModule):
+class DualCNF(LightningModule):
     def __init__(self, dx, dy, dz, n_components, hidden_sizes, lr, weight_decay, verbose):
         super().__init__()
         self.save_hyperparameters()
@@ -110,7 +110,7 @@ def DINE(X, Y, Z, normalize=True, n_components=32, hidden_sizes=4, lr=5e-3, weig
         X, Y, Z = map(lambda x: (x - np.mean(x)) / np.std(x), (X, Y, Z))
     X, Y, Z = map(lambda x: torch.tensor(x).float().view(N, -1), (X, Y, Z))
 
-    model = CCNF(dx=X.shape[1], dy=Y.shape[1], dz=Z.shape[1], n_components=n_components, hidden_sizes=hidden_sizes, lr=lr, weight_decay=weight_decay, verbose=verbose)
+    model = DualCNF(dx=X.shape[1], dy=Y.shape[1], dz=Z.shape[1], n_components=n_components, hidden_sizes=hidden_sizes, lr=lr, weight_decay=weight_decay, verbose=verbose)
     model.fit(X, Y, Z, max_epochs=max_epochs, verbose=verbose, gpus=gpus)
     
     e_x, e_y = model.transform(X, Y, Z)
