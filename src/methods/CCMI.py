@@ -3,7 +3,6 @@ import random
 import numpy as np
 import tensorflow as tf
 
-tf.compat.v1.disable_eager_execution()
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
@@ -373,5 +372,6 @@ class CCMI_Model(object):
               return False
 
 def CCMI(X, Y, Z, **kwargs):
+    tf.compat.v1.disable_eager_execution()
     model_indp = CCMI_Model(X, Y, Z, tester = 'Classifier', metric = 'donsker_varadhan', num_boot_iter = 10, h_dim = 64, max_ep = 20)
     return model_indp.get_cmi_est()

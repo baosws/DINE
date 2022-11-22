@@ -8,7 +8,7 @@ testcases:
     random_state: 47
 
 methods:
-  LMI:
+  DINE:
     n_components: 4
     hidden_sizes: 16
     verbose: False

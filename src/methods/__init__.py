@@ -1,7 +1,8 @@
 from .DINE import DINE
 from .MINE import MINE
-from .KSG import KSG
 from .CCMI import CCMI
+from .MIND import MIND
+from .KSG import KSG
 from .KCIT import KCIT
 from .CCIT import CCIT
 from .DINE_CIT import DINE_CIT
@@ -9,6 +10,7 @@ from .DINE_CIT import DINE_CIT
 methods_dict = dict(
     DINE=DINE,
     MINE=MINE,
+    MIND=MIND,
     KSG=KSG,
     CCMI=CCMI,
     KCIT=KCIT,
