@@ -99,7 +99,7 @@ class DualCNF(LightningModule):
         
         return logs
 
-def DINE(X, Y, Z, normalize=True, n_components=32, hidden_sizes=4, lr=5e-3, weight_decay=5e-5, max_epochs=100, random_state=0, gpus=0, return_latents=False, verbose=False, **kwargs):
+def DINE(X, Y, Z, normalize=True, n_components=16, hidden_sizes=4, lr=5e-3, weight_decay=5e-5, max_epochs=100, random_state=0, gpus=0, return_latents=False, verbose=False, **kwargs):
     logger.setLevel(logging.DEBUG if verbose else logging.ERROR)
     if random_state is not None:
         torch.random.fork_rng(enabled=True)
