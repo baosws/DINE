@@ -1,3 +1,7 @@
+'''
+Adapted from the implementation of paper: Formal Limitations on the Measurement of Mutual Information (McAllester and Stratos, AISTATS 2020)
+https://github.com/karlstratos/doe
+'''
 import logging
 from turtle import forward
 import warnings
@@ -15,7 +19,6 @@ logging.getLogger("pytorch_lightning").setLevel(logging.WARNING)
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 
-# Author: Karl Stratos (me@karlstratos.com)
 import math
 import torch
 import torch.nn as nn

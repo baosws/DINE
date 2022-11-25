@@ -1,5 +1,5 @@
 '''
-Adapt from the implementation of paper CCMI : Classifier based Conditional Mutual Information Estimation by Sudipto Mukherjee, Himanshu Asnani and Sreeram Kannan.
+Adapted from the implementation of paper CCMI : Classifier based Conditional Mutual Information Estimation by Sudipto Mukherjee, Himanshu Asnani and Sreeram Kannan.
 https://github.com/sudiptodip15/CCMI
 '''
 
