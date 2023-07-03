@@ -61,10 +61,11 @@ Modifiable configurations are stored in `experiments/exp_*/config/`, and result 
 
 If you find our code helpful, please cite us as:
 ```
-@article{duong2022diffeomorphic,
-  title={Diffeomorphic Information Neural Estimation},
-  author={Duong, Bao and Nguyen, Thin},
-  journal={arXiv preprint arXiv:2211.10856},
-  year={2022}
+@inproceedings{duong2023diffeomorphic,
+	author = {Duong, Bao and Nguyen, Thin},
+	booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+	pages = {7468-7475},
+	title = {Diffeomorphic Information Neural Estimation},
+	year = {2023}
 }
 ```
